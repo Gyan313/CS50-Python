@@ -1,8 +1,9 @@
 def main():
-    n=int(input("Side of square = "))
+    n = int(input("Side of square = "))
     print_square(n)
 
-'''     
+
+"""     
 without nested loop
 def print_square(size):
     for _ in range(size):
@@ -10,12 +11,15 @@ def print_square(size):
 
 def print_column(n):
     print("#"*n)   
-'''
+"""
+
 
 # nested for loop
 def print_square(size):
     for i in range(size):
         for j in range(size):
-            print("#",end="")
-        print()
+            print("#", end="")
+        print()  # --> this print statement is here to provide a newline character.
+
+
 main()
