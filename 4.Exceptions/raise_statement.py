@@ -1,6 +1,6 @@
-s = 'apple'
+s = "apple"
 
 try:
-	num = int(s)
+    num = int(s)
 except ValueError:
-	raise ("String can't be changed into integer")
+    print("String can't be changed into integer")
