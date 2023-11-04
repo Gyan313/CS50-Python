@@ -11,9 +11,9 @@ def main():
     if len(sys.argv) == 1:
         print("Output:", pyfiglet.figlet_format(txt, font=ranFont))
 
-    elif (sys.argv[1] != "-f" or sys.argv[1] != "--font") or sys.argv[
-        2
-    ] not in fontList:
+    elif (sys.argv[1] != "-f" or sys.argv[1] != "--font") or (
+        sys.argv[2] not in fontList
+    ):
         print("Invalid usage")
         sys.exit()
 
@@ -21,4 +21,5 @@ def main():
         print("Output:", pyfiglet.figlet_format(txt, font=sys.argv[2]), sep="\n")
 
 
-main()
+if __name__ == "__main__":
+    main()
